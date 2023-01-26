@@ -1,0 +1,44 @@
+body
+{
+    background-color: black;
+}
+.bolhas
+{
+    position: absolute;
+    display: flex;
+
+}
+.bolhas span
+{
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #ffffff,
+    0 0 3px #fff,
+    0 0 3px #fff;
+    animation: animar calc(100s / var(--i)) linear infinite;
+}
+.html
+{
+    background-image: url(./logo-2582748_1280.webp);
+    width: 10px;
+    height: 10px;
+    animation: animar 10s linear infinite;
+}
+/* .bolhas span:nth-of-type(even)
+{
+    background: #2ee8bb;
+} */
+@keyframes animar
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
